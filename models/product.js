@@ -6,7 +6,7 @@ var MarketSchema = require("./market");
 var BrandSchema = require("./brand");
 
 var ProductSchema   = new Schema({    
-    name: {type: String, required: true},
+    name: {type: String, required: true, index: true, unique: true },
     brand:  {type: String, required: true},
     comment: String,
     price:  {type: Number, required: true},
